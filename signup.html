@@ -1,0 +1,101 @@
+<!-- INSERT INTO `amazon` (`name`, `phone no`, `password`) VALUES ('testname', '8989898989', 'yyyyyyyy');
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signuppage</title>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="img"><img src="secondlogo.jpg" height="90px" width="140px"></div>
+
+
+    <form method="post" action="db.php" class="form">
+        <p>Create Account</p>
+        <div class="input1">Your name<br><input type="text" placeholder="First and Last name" name="fname" class="input"></div>
+        <div class="input1">Phone no<br>
+                <select class="country-code" id="country-code">
+                  <option value="+91">IN +91</option>
+                  <option value="+1">+1 (USA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+61">+61 (Australia)</option>
+                  <option value="+81">+81 (Japan)</option>
+                  <!-- Add more country codes as needed -->
+                </select>
+                <input type="text" placeholder="phone no" name="phoneno" class="inputcode">
+                </div>
+        <div class="input1">Password<br><input type="text" placeholder="password" name="password" class="input"></div>
+        <button>Verify Mobile Number</button>
+    </form>
+    
+    </div>
+    
+</body>
+
+<style>
+.main{
+    height: 700px;
+    width: 350px;
+    display: flex;
+    /* margin-top: 60px; */
+    margin-left: 450px;
+}
+.img{
+    margin-left: 100px;
+    float: left;
+}
+p{
+    margin-left: 20px;
+    font-size: 2rem;
+}
+.form{
+    height: 400px;
+    width: 350px;
+    margin-top: 80px;
+    border-radius: 7px;
+    float: left;
+    border: 2px solid rgb(196, 196, 196);
+    margin-left: -240px;
+    
+}
+.input1{
+    height: 30px;
+    padding: 20px;
+    font-weight: 700;
+}
+.input{
+    width: 270px;
+    padding: 6px;
+    border-radius: 3px;
+    border:1px solid grey;
+    margin-top: 7px;
+}
+.inputcode{
+    width: 180px;
+    border-radius: 3px;
+    border:1px solid grey;
+    margin-top: 7px;
+    padding: 6px;
+    margin-left: 5px;
+}
+.country-code{
+    width: 80px;
+    padding: 6px;
+}
+button{
+    margin-left: 15px;
+    margin-top: 40px;
+    padding: 6px;
+    width: 85%;
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+}
+</style>
+
+</html>\
